@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  transition: background-color 0.5s ease;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #282c34;
+  color: white;
+}
+
+/* Light Theme */
+.light {
+  background-color: #ffffff;
+  color: #333;
+}

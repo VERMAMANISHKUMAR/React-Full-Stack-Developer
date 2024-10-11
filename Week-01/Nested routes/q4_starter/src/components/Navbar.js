@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 // Do the necessary modification in this file.
 export const Navbar = () => {
   return (
+    <>
     <div className="navbar">
       <img
         src="https://cdn-icons-png.flaticon.com/512/3176/3176363.png"
@@ -15,5 +16,7 @@ export const Navbar = () => {
         <Link to="/contact">Contact</Link>
       </nav>
     </div>
+    <Outlet/>
+    </>
   );
 };

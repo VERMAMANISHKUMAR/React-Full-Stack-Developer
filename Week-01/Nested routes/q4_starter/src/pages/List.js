@@ -1,12 +1,12 @@
-import { Navbar } from "../components/Navbar";
-// Remove the Navbar from this component
+
+
 
 import { items } from "../data";
 
 export const List = () => {
   return (
     <div className="list-wrapper">
-      <Navbar />
+      
       <div className="list page">
         <h3>List page</h3>
         <div className="item-list">

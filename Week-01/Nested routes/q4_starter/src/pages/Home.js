@@ -1,10 +1,10 @@
-import { Navbar } from "../components/Navbar";
+
 // Remove the Navbar from this component
 
 export const Home = () => {
   return (
     <div className="home-wrapper">
-      <Navbar />
+     
       <div className="home page">
         <h3>RapidRetail</h3>
         <img

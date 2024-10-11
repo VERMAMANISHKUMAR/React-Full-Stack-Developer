@@ -1,10 +1,9 @@
-import { Navbar } from "../components/Navbar";
-// Remove the Navbar from this component
+
 
 export const Contact = () => {
   return (
     <div className="contact-wrapper">
-      <Navbar />
+    
       <div className="contact page">
         <h3>Contact page</h3>
         <form>

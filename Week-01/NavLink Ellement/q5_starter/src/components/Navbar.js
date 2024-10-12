@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -11,10 +11,45 @@ export const Navbar = () => {
         />
 
         <nav>
-          {/* use NavLink inplace of Link to set the style to the active links */}
-          <Link to="/">Home</Link>
-          <Link to="/list">List</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink
+            style={({ isActive }) =>
+              isActive
+                ? {
+                    border: "2px solid #fff",
+                    backgroundColor: "#e1d1f976"
+                  }
+                : null
+            }
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            style={({ isActive }) =>
+              isActive
+                ? {
+                    border: "2px solid #fff",
+                    backgroundColor: "#e1d1f976"
+                  }
+                : null
+            }
+            to="/list"
+          >
+            List
+          </NavLink>
+          <NavLink
+            style={({ isActive }) =>
+              isActive
+                ? {
+                    border: "2px solid #fff",
+                    backgroundColor: "#e1d1f976"
+                  }
+                : null
+            }
+            to="/contact"
+          >
+            Contact
+          </NavLink>
         </nav>
       </div>
       <Outlet />
